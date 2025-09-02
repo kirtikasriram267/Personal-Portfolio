@@ -955,3 +955,64 @@ html.dark-mode #modeToggle:hover {
   padding-left: 10px;
   padding-right: 10px;
 }
+/* ========================== */
+/* Dark Mode Contact Form */
+html.dark-mode .contact-form input,
+html.dark-mode .contact-form textarea {
+  background: black;
+  border: 1px solid #444;
+  color: #eee;
+}
+
+html.dark-mode .contact-form input:focus,
+html.dark-mode .contact-form textarea:focus {
+  border-color: #9bb9ff;
+  background: black;
+}
+
+html.dark-mode .contact-form button {
+  background: linear-gradient(135deg, #3f51b5, #673ab7);
+  color: #fff;
+}
+
+html.dark-mode .contact-form button:hover {
+  background: linear-gradient(135deg, #5c6bc0, #7e57c2);
+  transform: translateY(-2px);
+}
+/* ===== Light Mode Inputs ===== */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2196F3;
+  box-shadow: 0 0 6px rgba(33, 150, 243, 0.4);
+}
+
+/* ===== Dark Mode Inputs ===== */
+html.dark-mode input[type="text"],
+html.dark-mode input[type="email"],
+html.dark-mode textarea {
+  background: black;  /* dark background */
+  color: #f5f5f5;
+  border: 1px solid #7d4bff;  /* violet border */
+  box-shadow: 0 2px 8px #7d4bff;
+}
+
+html.dark-mode input[type="text"]:focus,
+html.dark-mode input[type="email"]:focus,
+html.dark-mode textarea:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 8px rgba(159, 122, 234, 0.7);
+}
